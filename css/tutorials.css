@@ -1,0 +1,226 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #434343;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+html {
+	height: 100%;
+}
+
+
+/*HEADER*/
+
+
+.logo {
+	width: 180px;
+	height: 70px;
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	background-image: url('../img/logo.png');
+	background-size: 180px;
+	background-repeat: no-repeat;
+	z-index: 100;
+	opacity: 0.6;
+}
+
+.hamburger {
+	display: inline-block;
+	position: fixed;
+	right: 40px;
+	top: 20px;
+	z-index: 100;
+	opacity: 0.7;
+	transition: .8s ease;s
+}
+
+.logo:hover, .hamburger:hover{
+	opacity: 1;
+	transition: .8s ease;
+}
+
+span.menu, .decoration {
+	display: block;
+	width: 40px;
+	height: 5px;
+	background-color: #000;
+	margin:4px 0;
+}
+
+/*End Header*/
+
+/*Body*/
+
+div.iconsinpage {
+	margin: 0;
+}
+
+
+div.videosherowrapper {
+	margin-top: 60px;
+	top: 400px;
+	text-align: center;
+	padding: 40px;
+}
+
+div.videosherowrapper .headerdescription {
+	font-size: 16px;
+	font-weight: 400;
+	
+}
+
+div.videosherowrapper h1 {
+	font-size: 30px;
+	font-weight: 300;
+}
+
+section{
+	position: relative;
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	padding: 40px;
+	text-align: center;
+
+}
+div.videoswrapper {
+	background-color: white;
+	width: 50%;
+	height: 400px;
+	border: 1px solid white;
+	position: relative;
+}
+
+iframe {
+	opacity: 1;
+	width: 100%;
+	height: 400px;
+}
+
+.blue {
+	background-image: url('../img/illustration/3.jpg');
+	background-color: pink;
+}
+div.description {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	bottom: 0;
+	opacity: 0;
+	width: 100%;
+	height:100%;
+	background-color: #434343;
+	color: white;
+	padding: 20px;
+	z-index: 3;
+}
+
+h3, p {
+	font-weight: 300;
+}
+
+p {
+	font-size: 12px;
+	line-height: 2;
+	margin: 10px;
+}
+
+/*.videoswrapper:hover iframe {
+	opacity: 0;
+	transition: .5s ease;
+}*/
+
+.videoswrapper:hover .description {
+	opacity: 1;
+	transition: .5s ease;
+}
+
+/*VIDEO MODAL*/
+div.videomodal {
+	position: fixed;
+	display: flex;
+	align-content: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	
+	
+	display: none;
+	color: white;
+}
+
+div.blur {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	filter: blur(50px);
+	background-image: url('../img/illustration/1.jpg');
+	
+}
+
+iframe.frame {
+	position: fixed;
+	top: 10%;
+	left: 20%;
+	margin: 80px auto;
+	background-color: white;
+	width: 800px;
+	height: 500px;
+	z-index: 100;
+	box-shadow: 0px 2px 4px rgba(0,0,0,1);
+}
+
+/*Close-button*/
+
+.close-button {
+  position: absolute;
+  top:40px;
+  right:40px;
+  z-index: 100;
+  cursor: pointer;
+  height: 60px;
+  opacity: 0.6;
+}
+
+.close-button:hover {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.close-button span {
+  display: block;
+  width: 40px;
+  height:3px;
+  background-color: #000;
+  transform: rotate(45deg) translate(2px);
+  -webkit-transform: rotate(45deg) translate(2px);
+  -moz-transform: rotate(45deg) translate(2px);
+}
+
+.close-button span.right {
+  transform: rotate(-45deg) translate(2px);
+  -webkit-transform: rotate(-45deg) translate(2px);
+  -moz-transform: rotate(-45deg) translate(2px);
+}
+/*/// FROM HERE IS css for  TUTORIAL COPY2.HMTL file*/
+.imgbackground {
+	display: none;
+}

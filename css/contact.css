@@ -1,0 +1,170 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+
+/*HEADER*/
+
+
+.logo {
+	width: 180px;
+	height: 70px;
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	background-image: url('../img/whitelogo');
+	background-size: 180px;
+	background-repeat: no-repeat;
+
+}
+
+.hamburger {
+	display: inline-block;
+	position: fixed;
+	right: 40px;
+	top: 20px;
+}
+
+span.menu, .decoration {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+/*end Header*/
+
+/*BODY*/
+body {
+	background-color: black;
+	background-image: url('../img/contact.jpg');
+	background-size: contain;
+	background-position:  80% 50%;
+	background-repeat: no-repeat;
+}
+div.formwrapper {
+	width: 40%;
+	position: absolute;
+	top: 170px;
+	left: 100px;
+	color: white;
+}
+
+div.wrapperh1 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+span.typed-text, span.typed-cursor{
+	font-size: 30px;
+	font-weight: 600;
+}
+div.namecompanywrapper {
+	display: inline-flex;
+	width: 100%;
+}
+
+div.emailmessage {
+	display: block;
+	width: 100%;
+	height: 100px;
+}
+
+div.wrapper {
+	width: 50%;
+	padding-right: 0.7%;
+}
+div.wrapper2{
+	width: 100%;
+	padding-right: 0.7%;
+}
+
+label {
+	font-weight: 300;
+	font-size: 16px;
+	color: #B5B8CD;
+}
+
+#name, #company, #email, #message, #submit {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	height: 50px;
+	border: none;
+	background-color: rgba(0,0,0,0);
+	border-bottom: solid 2px white;
+	color: white;
+	padding: 10px;
+	font-size: 15px;
+}
+
+#message{
+	width: 100%;
+	height: 200px;
+	border: solid 3px white;
+	margin-top: 10px;
+}
+
+  #submit {
+	width: 20%;
+	border: solid 3px white;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.typed-cursor {
+    font-size: 3rem;
+    color: white;
+    opacity: 1;
+    font-weight: 400;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+/*END BODY*/

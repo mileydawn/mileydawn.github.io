@@ -1,0 +1,219 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: #ffffff;
+  background: #001426 url("../img/bg-pattern.png");
+}
+
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+.cd-background-wrapper {
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  -webkit-perspective: 4000px;
+  perspective: 4000px;
+  height: 100%;
+}
+
+.cd-floating-background {
+
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  background-color: black;
+}
+.cd-floating-background.is-absolute {
+  position: absolute;
+}
+.cd-floating-background img {
+  object-fit: contain;
+  width: 50%;
+  height: 100%;
+margin: 0 auto;
+margin-top: 5%;
+  display: block;
+  width: 60%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* fixes a Firefox bug - images not correctly rendered*/
+/*border: 2px solid white;*/
+}
+.cd-floating-background img:not(:first-child) {
+  object-fit: contain;
+  height:100%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+.cd-floating-background img:first-child {
+  display:hidden;
+  -webkit-transform: translateZ(50px);
+  -ms-transform: translateZ(50px);
+  transform: translateZ(0px);
+}
+.cd-floating-background img:nth-child(2) {
+  -webkit-transform: translateZ(290px);
+  -ms-transform: translateZ(290px);
+  transform: translateZ(50px);
+}
+.cd-floating-background img:nth-child(3) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(100px);
+}
+
+.cd-floating-background img:nth-child(4) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(150px);
+}
+
+.cd-floating-background img:nth-child(5) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(200px);
+}
+
+.cd-floating-background img:nth-child(6) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(25px);
+}
+
+.cd-floating-background img:nth-child(7) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(300px);
+}
+
+.cd-floating-background img:nth-child(8) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(350px);
+}
+
+.cd-floating-background img:nth-child(9) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(400px);
+}
+
+.cd-floating-background img:nth-child(10) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(450px);
+}
+
+/*2nd image*/
+.secondimage.cd-floating-background img:not(:first-child) {
+  object-fit: contain;
+  height:100%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+.secondimage.cd-floating-background img:first-child {
+  display:hidden;
+  -webkit-transform: translateZ(50px);
+  -ms-transform: translateZ(50px);
+  transform: translateZ(0px);
+}
+.secondimage.cd-floating-background img:nth-child(2) {
+  -webkit-transform: translateZ(290px);
+  -ms-transform: translateZ(290px);
+  transform: translateZ(50px);
+}
+.secondimage.cd-floating-background img:nth-child(3) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(100px);
+}
+
+.secondimage.cd-floating-background img:nth-child(4) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(150px);
+}
+
+.secondimage.cd-floating-background img:nth-child(5) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(200px);
+}
+
+.secondimage.cd-floating-background img:nth-child(6) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(25px);
+}
+
+.secondimage.cd-floating-background img:nth-child(7) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(300px);
+}
+
+.secondimage.cd-floating-background img:nth-child(8) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(350px);
+}
+
+.secondimage.cd-floating-background img:nth-child(9) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(150px);
+}
+
+.secondimage.cd-floating-background img:nth-child(10) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(450px);
+}
+.secondimage.cd-floating-background img:nth-child(11) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(450px);
+}
+
+.secondimage.cd-floating-background img:nth-child(12) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(450px);
+}
+
+.secondimage.cd-floating-background img:nth-child(13) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(450px);
+}
+
+
+.no-preserve-3d .cd-floating-background {
+  /* we target browsers that don't support preserve-3d and show just a standard image - no effect visible */
+  position: relative;
+}

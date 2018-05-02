@@ -1,0 +1,162 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+
+/*HEADER*/
+
+
+.logo {
+	width: 180px;
+	height: 70px;
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	background-image: url('../img/whitelogo');
+	background-size: 180px;
+	background-repeat: no-repeat;
+
+}
+
+.hamburger {
+	display: inline-block;
+	position: fixed;
+	right: 40px;
+	top: 20px;
+}
+
+span.menu, .decoration {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: white;
+  margin:4px 0;
+}
+
+/*end Header*/
+
+/*BODY*/
+body {
+	/*background-color: black;*/
+/*	background-image: url('../img/contact.jpg');
+	background-size: contain;
+	background-position:  80% 50%;
+	background-repeat: no-repeat;*/
+	/*background: linear-gradient(black, lightgrey);*/
+}
+
+div.backgroundimage {
+transform-style: preserve-3d;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	background-image: url('../img/contact.jpg');
+	background-size: contain;
+	background-position:  80% 50%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+div.smaller {
+	position: absolute;
+	height: 50%;
+	width: 50%;
+	margin: 0 auto;
+	background-color: pink;
+	transform: translateZ(20px);
+
+}
+div.formwrapper {
+	width: 40%;
+	position: absolute;
+	top: 170px;
+	left: 100px;
+	color: white;
+}
+
+div.wrapperh1 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 800;
+}
+div.namecompanywrapper {
+	display: inline-flex;
+	width: 100%;
+}
+
+div.emailmessage {
+	display: block;
+	width: 100%;
+	height: 100px;
+}
+
+div.wrapper {
+	width: 50%;
+	padding-right: 0.7%;
+}
+div.wrapper2{
+	width: 100%;
+	padding-right: 0.7%;
+}
+
+label {
+	font-weight: 300;
+	font-size: 16px;
+	color: #B5B8CD;
+}
+
+#name, #company, #email, #message, #submit {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	height: 50px;
+	border: none;
+	background-color: rgba(0,0,0,0);
+	border-bottom: solid 2px white;
+	color: white;
+	padding: 10px;
+	font-size: 15px;
+}
+
+#message{
+	width: 100%;
+	height: 200px;
+	border: solid 3px white;
+	margin-top: 10px;
+}
+
+  #submit {
+	width: 20%;
+	border: solid 3px white;
+	margin: auto;
+	margin-top: 30px;
+}
+
+:hover {
+
+}
+
+
+/*END BODY*/

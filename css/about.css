@@ -1,0 +1,357 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+
+/*HEADER*/
+
+
+.logo {
+	width: 180px;
+	height: 70px;
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	background-image: url('../img/logo.png');
+	background-size: 180px;
+	background-repeat: no-repeat;
+
+}
+
+.hamburger {
+	display: inline-block;
+	position: fixed;
+	right: 40px;
+	top: 20px;
+}
+
+span.menu, .decoration {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: #000;
+  margin:4px 0;
+}
+
+/*End Header*/
+
+/*BODY START*/
+/*StartnABOUT SECTION*/
+
+section.intro {
+	padding: 60px;
+	width: 100%;
+	height: 700px;
+	display: flex;
+	align-items: center;
+	background-color: lightblue;
+	background-image: url('../img/about.jpg');
+	background-position: right; 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: contain;
+}
+
+
+div.text {
+	display: inline-block;
+	margin: 40px 0px 0px 0px;
+	width: 50%;
+}
+
+h1 {
+	margin: 20px 0px 20px 0;
+}
+
+strong {
+	font-weight: 800;
+}
+
+.head li {
+	list-style: none;
+	font-size: 40px;
+	font-weight: 800;
+	margin: -5px 0px;
+}
+
+.intro p {
+	font-size: 18px;
+	line-height: 35px;
+	margin: 10px 0px 10px 0;
+}
+
+button {
+	background-color: rgba(0, 0, 0, 0);
+	padding: 10px;
+	height: 50px;
+	width: 350px;
+	font-size: 16px;
+	font-weight: 700;
+	border: solid black 4px;
+	margin: 10px 0px 10px 0;
+}
+
+section.intro span.decoration {
+	background-color: white;
+	margin: 20px 0px 20px 0;
+	width: 40px;
+    height:5px;
+}
+
+/*End ABOUT SECTION*/
+/*Start second SECTION*/
+
+section.second {
+	width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.secondsub {
+	background-color: white;
+	width: 90%;
+	height: auto;
+	display: inline-flex;
+	padding: 60px;
+}
+
+
+div.skill, div.wrapper {
+	width: 50%;
+	height: 100%;
+	padding: 0 100px 0 0px;
+}
+
+section.second span.decoration {
+	background-color: #D7BB5E;
+}
+
+section.second li {
+	list-style: none;
+	margin: 10px 0 10px 0;
+	font-size: 13px;
+}
+
+
+
+div.sticky {
+	/*try sticky*/
+	position: sticky;
+	top: 20px;
+}
+
+div.sticky .decoration {
+	background-color: white;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: 800;
+	margin: 20px 0px 30px 0;
+}
+
+section.second p  {
+	font-size: 13px;
+	line-height: 25px;
+}
+
+div.horizontal {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+div.skillbar {
+	margin: 6px 0px 6px 20px;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+div.skillbar div.decoration {
+	height: 7px;
+	width: 100%;
+	margin: 0;
+	background-color: #DBDBDB;
+	border-radius: 3px;
+}
+
+div.skillbar span.decoration {
+	height: 7px;
+	margin: 0;
+	border-radius: 3px 0px 0px 3px;
+}
+
+span.decoration.ps {
+	width: 90%;
+}
+
+span.decoration.illustrator {
+	width: 80%;
+}
+
+span.decoration.corel {
+	width: 60%;
+}
+
+span.decoration.zbrush {
+	width: 66%;
+}
+
+span.decoration.max {
+	width: 50%;
+}
+
+span.decoration.daz {
+	width: 70%;
+}
+span.decoration.ae {
+	width: 63%;
+}
+span.decoration.flash {
+	width: 62%;
+}
+
+div.education {
+	margin-bottom: 40px;
+}
+
+/*End second SECTION*/
+/*Start third SECTION*/
+
+
+/*End third SECTION*/
+/*Start Employment Section*/
+
+section.third {
+	height: auto;
+	background: linear-gradient(#B5D5DE, #D6D8D8);
+	padding: 60px;
+	color: #474747;
+}
+
+section.third h2 {
+	color: black;
+}
+
+div.hero-wrapper {
+	width: 1150px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	left: 130px;
+}
+
+div.company {
+display: inline-flex;
+margin: 20px;
+}
+
+.yearwrapper, .dotwrapper, .company-detail-wrapper {
+	display: flex;
+	align-self: flex-start;
+}
+
+.yearwrapper {
+	justify-content: flex-end;
+	width: 200px;
+}
+
+.company-detail-wrapper{
+	justify-content: flex-start;
+	width: 700px;
+}
+
+div.dotwrapper {
+	width: 100px;
+	justify-content: center;
+}
+
+
+
+div.dot {
+	width: 13px;
+	height: 13px;
+	border-radius: 10px;
+	background-color: #474747;
+}  
+
+
+div.line {
+	
+	height: 777px;
+	width: 3px;
+	background-color: #474747;
+	position: absolute;
+	top: 20px;
+	left: 269px;
+}
+
+p.job, p.year {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 25px;
+}
+
+p.job {
+	margin-top: 10px;
+}
+
+
+a.launch {
+	text-decoration: none;
+	font-weight: 700; 
+	font-style: italic;
+	color: black;
+}
+
+small {
+	font-style: italic;
+}
+
+/*mouseenter style setting*/
+
+.selected div.dot{
+	width: 21px;
+	height: 21px;
+	/*border: 3px solid black;*/
+	z-index: 100;
+	border-radius: 10px;
+	background-color: black;
+	align-self: flex-start;
+	transition: 0.9s;
+	color: black;
+}
+
+.selected strong{
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 25px;
+	transition: 0.9s;
+	color: black;
+}
+
+.selected.company-detail-wrapper, .selected p, .selected small{
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 25px;
+	transition: 0.9s;
+	color: black;
+}
+
+
+
+
+ 

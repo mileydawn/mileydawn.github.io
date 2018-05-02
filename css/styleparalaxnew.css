@@ -1,0 +1,180 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+/*html {
+  font-size: 62.5%;
+  height: 100%;
+}*/
+
+.parent {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: #ffffff;
+  }
+
+a {
+  color: #196a74;
+  text-decoration: none;
+}
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+.cd-background-wrapper {
+/*  background-color: black;*/
+  position: relative;
+  overflow: hidden;
+  -webkit-perspective: 4000px;
+  perspective: 4000px;
+}
+
+
+.cd-floating-background {
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  
+}
+.cd-floating-background.is-absolute {
+  position: absolute;
+}
+.cd-floating-background img {
+margin: 0 auto;
+  display: block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* fixes a Firefox bug - images not correctly rendered*/
+
+}
+
+.cd-floating-background img.lotus {
+  width: 90%;
+}
+
+.cd-floating-background img.blue {
+  width: 101%;
+}
+
+.cd-floating-background img.sword {
+  width: 80%;
+}
+
+.cd-floating-background img.lotus:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+
+.cd-floating-background img:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cd-floating-background img:first-child {
+  display:hidden;
+  -webkit-transform: translateZ(50px);
+  -ms-transform: translateZ(50px);
+  transform: translateZ(80px);
+}
+.cd-floating-background img:nth-child(2) {
+  -webkit-transform: translateZ(290px);
+  -ms-transform: translateZ(290px);
+  transform: translateZ(110px);
+}
+.cd-floating-background img:nth-child(3) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(150px);
+}
+
+.cd-floating-background img:nth-child(4) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(200px);
+}
+
+.cd-floating-background img:nth-child(5) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(250px);
+}
+
+.cd-floating-background img:nth-child(6) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(300px);
+}
+
+.cd-floating-background img:nth-child(7) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(350px);
+}
+
+.cd-floating-background img:nth-child(8) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(400px);
+}
+
+.cd-floating-background img:nth-child(9) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(450px);
+}
+
+.cd-floating-background img:nth-child(10) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(500px);
+}
+
+.cd-floating-background img:nth-child(11) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(550px);
+}
+
+.cd-floating-background img:nth-child(12) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(600px);
+}
+
+.cd-floating-background img:nth-child(13) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(650px);
+}
+.no-preserve-3d .cd-floating-background {
+  /* we target browsers that don't support preserve-3d and show just a standard image - no effect visible */
+  position: relative;
+}
+
+
+/*change background color*/
+
+[data-bg="2"] {
+  background: linear-gradient(0deg,#4B5C76,#E1EBED);
+  background-image: url('../img/blue/1(1).png');
+  background-size: cover;
+}
+
+[data-bg="3"] {
+  background-image: url('../img/sword2/.1.png');
+  background-size: cover;
+  background: linear-gradient(90deg,#4B5C76,#E1EBED);
+}

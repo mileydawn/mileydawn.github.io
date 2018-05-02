@@ -1,0 +1,179 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+ 
+
+/*HEADER*/
+
+
+.logo {
+	width: 180px;
+	height: 70px;
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	background-image: url('../img/whitelogo');
+	background-size: 180px;
+	background-repeat: no-repeat;
+	z-index: 1000;
+
+}
+
+.hamburger {
+	display: inline-block;
+	position: fixed;
+	right: 40px;
+	top: 20px;
+	z-index: 1000;
+}
+
+span.menu, .decoration {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: white;
+  margin:4px 0;
+}
+
+/*end Header*/
+
+/*image */
+.bg-wrapper {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: background 1s;
+}
+[data-bg="1"] {
+	background: linear-gradient(green,blue);
+}
+[data-bg="2"] {
+	background: linear-gradient(white,blue);
+}
+[data-bg="3"] {
+	background: linear-gradient(yellow, purple);
+}
+[data-bg="4"] {
+	background: linear-gradient(red,yellow);
+}
+[data-bg="5"] {
+	background: linear-gradient(blue,green);
+}
+
+section.vertical-scrolling {
+	transform-style: preserve-3d;
+	transform: translateZ(0);
+  perspective: 400px;
+
+}
+
+img.imageinsection {
+	object-fit: contain;
+	object-position: bottom center;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.first-section-images, .second-section-images {
+	position: relative;
+	bottom: 120px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.second-section-images {
+	position: relative;
+	bottom: 120px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*Layer*/
+.one {
+	transform: translateZ(5px);
+}
+.two {
+	transform: translateZ(10px);
+}
+
+.three {
+	transform: translateZ(20px);
+}
+.four {
+	transform: translateZ(30px);
+}
+.five {
+	transform: translateZ(40px);
+}
+
+.six {
+	transform: translateZ(60px);
+}
+.seven {
+	transform: translateZ(70px);
+}
+.eight {
+	transform: translateZ(80px);
+}
+.nine {
+	transform: translateZ(90px);
+}
+
+.ten {
+	transform: translateZ(100px);
+}
+
+/*SECOND LAYER*/
+.second-section-images img.one {
+	transform: translateZ(0px);
+}
+.second-section-images img.two {
+	transform: translateZ(10px);
+}
+
+.second-section-images img.three {
+	transform: translateZ(20px);
+}
+.second-section-images img.four {
+	transform: translateZ(30px);
+}
+.second-section-images img.five {
+	transform: translateZ(40px);
+}
+
+.second-section-images img.six {
+	transform: translateZ(50px);
+}
+.second-section-images img.seven {
+	transform: translateZ(60px);
+}
+.second-section-images img.eight {
+	transform: translateZ(70px);
+}
+.second-section-images img.nine {
+	transform: translateZ(80px);
+}
+
+.second-section-images img.ten {
+	transform: translateZ(90px);
+}
